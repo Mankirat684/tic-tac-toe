@@ -33,7 +33,7 @@ const gameBoard = (function () {
           grid.innerText = symbol;
         }
         seeWin(mainGame);
-        draw();
+        draw()
       })
     );
   };
@@ -148,13 +148,14 @@ const gameBoard = (function () {
       }
       newGame();
     }
+
   };
   function draw() {
     const checkDraw = [...mainGame].every((grid) => grid.innerText != "");
-    if (checkDraw) {
-      console.log("game is drew");
+    const res = document.querySelector(".result");
+    seeWin(mainGame)
+    if (checkDraw && res.innerText == "") {
       newGame();
-      const res = document.querySelector(".result");
       res.innerText = `draw`;
     }
   }
