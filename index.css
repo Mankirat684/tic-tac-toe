@@ -1,0 +1,114 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+    8. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: grey;
+}
+.maindiv{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 180px;
+}
+.gameboard{
+    border: 4px,solid,black;
+    border-radius: 10px;
+    width: fit-content;
+    position: relative;
+    top: 15%;
+}
+.rows {
+  display: flex;
+}
+.grids {
+    height: 80px;
+    width: 80px;
+    border: 2px,solid,black;
+    background-color: white;
+    color: red;
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.result{
+  height: 15%;
+  width: 100%;
+  position: relative;
+  bottom: 5%;
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+.newgame{
+  position: relative;
+  bottom: 20%;
+}
+
