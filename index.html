@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="maindiv">
+      <div class="ldiv">
+        <div class="inputs">
+          <form action="xyz.php" method="get" class="myform">
+            <div>
+              <label for="name">Name:  </label>
+              <input type="text" class="bookname" id="name" required/>
+            </div>
+            <div>
+              <label for="Aname">Author: </label>
+              <input type="text" class="author" id="Aname" required/><br />
+            </div>
+            <div>
+              <label for="number">Pages:</label>
+              <input type="number" class="pagenumber" id="number" required/><br />
+            </div>
+            <div>
+              <label>Read Status:  </label>
+              <label for="read">Read</label>
+              <input type="radio" name="woosh" value="true" class="isread" id="read" />
+             
+            </div>
+            <div class="addlogo">
+            <button type="submit" class="submission">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <title>plus</title>
+                  <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="rdiv">
+        <div class="books"></div>
+      </div>  
+    <script src="index.js"></script>
+  </body>
+</html>
